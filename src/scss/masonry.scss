@@ -1,0 +1,48 @@
+
+
+.masonry-container {
+    padding: 30px 25%;
+}
+
+.sizer {
+    width: 15%;
+}
+
+.masonry-item {
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.masonry-cover-container {
+    background: white;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.masonry-cover-container a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.masonry-cover-container a .fa-search {
+    color: #41bedd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -11px;
+}
+

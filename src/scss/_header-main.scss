@@ -1,0 +1,46 @@
+.header-main {
+    background: url(../images/backgr.png);
+    background-repeat: no-repeat;
+    padding: 200px 0 100px;
+    background-size: cover;
+    
+    .header-way {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-family: 'latolight';
+        font-size: 60px;
+        color: white;
+    }
+
+    .bread {
+        align-self: center;
+        padding-top: 20px;
+    }
+    .bread-crumbs {
+        list-style: none;
+        display: inline-block;
+        color: white;
+        font-family: 'latoregular';
+        font-size: 16px;
+        cursor: pointer;
+
+        .fa-chevron-right {
+            font-size: 10px;
+            padding: 0 10px;
+        }
+    
+    }
+
+    .bread-crumbs:hover {
+        color: #41bedd;
+    }
+
+
+
+    
+}

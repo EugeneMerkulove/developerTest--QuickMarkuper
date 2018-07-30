@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+clearfix:after {
+    content: '';
+    clear: both; 
+    display: block;
+    height: 0;
+}
+
+
+
+header {
+    
+    background: url(../images/back-line.png);
+    background-repeat: no-repeat;
+
+    .logo {
+        padding: 40px 0;
+    }
+    
+    .section-header {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 99999999;
+    }
+
+
+    // NAVIGATION
+
+
+    .menu-nav {
+
+        
+    
+        ul {
+            list-style: none;
+            margin:  0;
+            padding: 0;
+        }    
+
+        li {
+            font-family: 'latolight';
+            font-size: 18px;
+            
+        }
+
+        .menu-name, .menu-item {
+            position: relative;
+        }
+
+
+        .menu-name:hover .menu-drop {
+            display: block;
+            width: 235px;
+        }   
+        .menu-name:not(:last-child):hover {
+            border-bottom: 2px solid #41bedd;
+        }
+        
+
+        .menu-name {
+            display: inline-block;
+            position: relative;
+
+            .menu-list {
+                padding: 40px 0;
+                padding-right: 75px;
+            }
+
+            .fa-chevron-down, .fa-chevron-right {
+                position: absolute;
+                opacity: 0.7;
+                font-size: 12px;
+            }
+            
+
+            .fa-chevron-down {
+                right: 55px;
+                top: 45px;
+            }
+            .fa-chevron-right {
+                right: 10px;  
+                top: 20px; 
+            }
+
+            a {
+                text-decoration: none;
+                outline: none;  
+                cursor: pointer;
+                color: black;
+                display: block;
+            }
+
+            a:hover {
+                color: #41bedd;
+            }
+
+            .menu-drop {
+                position: absolute;
+                display: none;
+                top: 100px;
+
+                
+
+                .sub-menu {
+                    position: absolute;
+                    left: 234px;
+                    display: none;
+                    width: 235px;
+                    top: 0;
+                }
+                li {
+                    padding: 15px 10px;
+                    border: 1px solid #ecf0f1;
+                    background: white;
+                }
+                li:hover {
+                    background: #f7f9f9;
+                }
+
+                .menu-item:hover .sub-menu {
+                    display: block;
+                }
+
+            }
+        }
+        
+        // search form
+        .search-tp {
+            -webkit-appearance: textfield;
+            -webkit-box-sizing: content-box;
+            font-family: 'latolight';
+            font-size: 100%;
+        }
+        .search-tp::-webkit-o-search-decoration,
+        .search-tp::-webkit-o-search-cancel-button {
+            display: none;
+        }
+
+        .search-tp {
+            border: solid 1px #ccc;
+            padding: 9px 10px 9px 32px;
+            
+            -webkit-border-radius: 10em;
+            -moz-border-radius: 10em;
+            border-radius: 10em;
+            
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            outline: none;
+        }
+        .search-tp:focus {
+            width: 130px; 
+            background-color: #fff;
+            border-color: #6dcff6;
+            
+            -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            -o-box-shadow: 0 0 5px rgba(109,207,246,.5); 
+        }
+
+        #search-fm .search-tp {
+            width: 13px;
+            padding-left: 20px;
+            color: transparent;
+            cursor: pointer;
+        }
+        #search-fm .search-tp:hover {
+            background-color: #fff;
+            position: relative;
+        }
+        #search-fm .search-tp:focus {
+            width: 130px;
+            padding-left: 32px;
+            color: #000;
+            background-color: #fff;
+            cursor: auto;
+        }
+
+        .fa-search {
+            position: absolute;
+            color: #ccc;
+            z-index: 99999;
+            z-index: 99999;
+            top: 7px;
+            left: 10px;
+            font-size: 25px;
+            outline: none;
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+
+
+        // search form end
+    }
+    // NAVIGATION END    
+}
